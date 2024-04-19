@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>wordle-ppy</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <div class="contenedorPrincipal">
+    <h1>Wordle PPY</h1>
+    <span class="verificacionIntento">Solo tienes 6 intentos</span>
+    <input type="text"id="guess-input" placeholder="Ingresar una palabra con 5 letras" maxlength="5" />
+    <div class="contenedorBoton">
+    <button class="guess-button">Intentar</button> 
+    <button class="reinicio-boton" onclick="reiniciarJuego(this)">Reiniciar</button>
+    </div>
+    <div id="grid"></div>
+    <p id="guesses"></p>
+    </div>
+
+</body>
+</html>
